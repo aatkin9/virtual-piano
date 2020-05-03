@@ -1,9 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
-import { Piano, KeyboardShortcuts, MidiNumbers } from 'react-piano';
+import { KeyboardShortcuts, MidiNumbers } from 'react-piano';
 import 'react-piano/dist/styles.css';
 
-import DimensionsProvider from './DimensionsProvider';
 import SoundfontProvider from './SoundfontProvider';
 import PianoWithRecording from './PianoWithRecording';
 
@@ -114,7 +113,7 @@ class PianoPage extends React.Component {
                 recording={this.state.recording}
                 setRecording={this.setRecording}
                 noteRange={noteRange}
-                width={300}
+                width={700}
                 playNote={playNote}
                 stopNote={stopNote}
                 disabled={isLoading}
@@ -127,10 +126,6 @@ class PianoPage extends React.Component {
           <button onClick={this.onClickPlay}>Play</button>
           <button onClick={this.onClickStop}>Stop</button>
           <button onClick={this.onClickClear}>Clear</button>
-        </div>
-        <div className="mt-5">
-          <strong>Recorded notes</strong>
-          <div>{JSON.stringify(this.state.recording.events)}</div>
         </div>
       </div>
     );

@@ -3,15 +3,15 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import Straighten from "@material-ui/icons/Straighten";
+import Language from "@material-ui/icons/Language";
+import Cloud from "@material-ui/icons/CloudQueue";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
+import GridContainer from "../../../components/Grid/GridContainer.js";
+import GridItem from "../../../components/Grid/GridItem.js";
+import InfoArea from "../../../components/InfoArea/InfoArea.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+import styles from "../../../assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -21,13 +21,11 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>About this Project</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            My virtual piano was built using Node.js and React. This project was 
+            written in javascript. I have compiled sources from the following to 
+            bring it all together. Sources for each can be found at the top of the page.
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,27 +33,27 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="React Piano"
+              description="React Piano is the virtual piano used to play music given user input"
+              icon={Straighten}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Material-ui-kit by Creative Tim"
+              description="This website was created with the help of a web template"
+              icon={Language}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Digital Ocean"
+              description="Digital Ocean hosts this website through an easy and efficient process"
+              icon={Cloud}
               iconColor="danger"
               vertical
             />
